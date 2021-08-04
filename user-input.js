@@ -1,7 +1,7 @@
 "use strict";
 
-const ps = require("prompt-sync");
-const prompt = ps({ sigint: true});
+const prompt = require("prompt-sync");
+const prompt = ps({ sigint: true });
 
 let userName = prompt("Enter your name: ");
 console.log("Hello ", userName);

@@ -12,16 +12,16 @@ function mileToKilometer(miles){
 
 //main function
 function main(){
-    let myInches = 156;
-    let myFeet = inchToFeet(myInches);
-    console.log(myFeet);
+    const ps = require("prompt-sync");
+    const prompt = ps({ sigint: true });
 
-    let dadiInches = 1440;
-    let dadiFeet = inchToFeet(dadiInches);
-    console.log(dadiFeet);
+    let myInches = prompt("Enter your height in inches: ");
+    let myFeet = inchToFeet(myInches);
+    
+    console.log(myFeet + " feet");
 
     let marathon = mileToKilometer(26.2);
-    console.log(marathon);
+    console.log("Marathon length in kilometeres: ", marathon);
 }
 
 main();
